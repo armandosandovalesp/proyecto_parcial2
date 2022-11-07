@@ -11,7 +11,7 @@
     $sql = "UPDATE juegos SET nombre='".$nombre."', empresa_desarrolladora = '".$empresa_desarrolladora."', descripcion='".$descripcion."', precio='".$precio."', fecha_salida='".$fecha_salida."'"."WHERE id=".$id;
 
     if($conexion->query($sql) === TRUE){
-        echo "Registro guardado con Éxito <a href='consultarDatos.php'>Regresar</a>";
+        echo "<a>Registro guardado con Éxito <a href='consultarDatos.php'>Regresar</a>";
 
     } else {
         echo "Error: ".$sql."<br>".$conexion->error."<br><br><a href='consultarDatos.php'>Regresar</a>";
